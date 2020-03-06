@@ -2,6 +2,7 @@
 body {
   margin: 0;
 }
+
 .header {
   margin-top: 20px;
   padding: 0px;
@@ -26,7 +27,7 @@ body {
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+.sticky + .columns {
   padding-top: 102px;
 }
 
@@ -46,8 +47,14 @@ li a {
   display: inline-block;
   color: black;
   text-align: center;
-  padding: 30px 30px;
+  padding: 15px 30px;
+  padding-top: 40px;
   text-decoration: none;
+}
+
+li > a:hover {
+  display: inline-block;
+  border-bottom: 2px solid yellow;
 }
 
 .menu {
@@ -57,7 +64,7 @@ li a {
   left: 1152px;
   bottom: 1907px;
 
-  font-family: Avenir;
+  font-family: Agenda;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -82,4 +89,46 @@ li a {
   position: fixed;
   bottom: 0;
   padding: 20px 27px;
+}
+
+.columns {
+  column-count: 2;
+  margin-top: 30px;
+}
+
+.columns figure {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.figure:hover .overlay {
+  opacity: 1;
+}
+
+.nameofwork {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.columns figure img {
+  width: 100%;
 }
