@@ -4,9 +4,10 @@ body {
 }
 
 .header {
-  margin-top: 20px;
   padding: 0px;
   color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
 }
 
 .header img {
@@ -16,7 +17,7 @@ body {
 
 /* Page content */
 .content {
-  padding: 20px;
+  margin-top: 100px;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -41,6 +42,7 @@ li {
   float: right;
   font-size: 18px;
   height: 25px;
+  font-family: "Montserrat", sans-serif;
 }
 
 li a {
@@ -54,7 +56,7 @@ li a {
 
 li > a:hover {
   display: inline-block;
-  border-bottom: 2px solid yellow;
+  border-bottom: 2px solid #ffb70d;
 }
 
 .menu {
@@ -64,7 +66,7 @@ li > a:hover {
   left: 1152px;
   bottom: 1907px;
 
-  font-family: Agenda;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -75,14 +77,30 @@ li > a:hover {
 }
 
 #name {
-  margin-top: 60px;
-  font-family: Agenda;
+  margin-top: 100px;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 48px;
+  font-size: 80px;
   line-height: 47px;
+  text-decoration: underline #ffb70d;
 
   text-align: center;
+}
+#profile-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 485.25px;
+}
+
+#profile {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 35px;
+  margin: 0px;
 }
 
 .footer {
@@ -93,14 +111,13 @@ li > a:hover {
 
 .columns {
   column-count: 2;
-  margin-top: 30px;
+  background-color: rgba(158, 153, 153, 0.5);
 }
 
 .columns figure {
   position: relative;
   display: inline-block;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 10px;
 }
 
 .overlay {
@@ -125,8 +142,9 @@ li > a:hover {
 
 .nameofwork {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
+  text-align: center;
 }
 
 .columns figure img {
