@@ -117,7 +117,6 @@ li > a:hover {
 .columns figure {
   position: relative;
   display: inline-block;
-  margin: 10px;
 }
 
 .overlay {
@@ -149,4 +148,17 @@ li > a:hover {
 
 .columns figure img {
   width: 100%;
+}
+#flip-page {
+  background-color: rgba(158, 153, 153, 0.5);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 100px;
+}
+
+#seemore {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

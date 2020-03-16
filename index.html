@@ -82,6 +82,18 @@
           </div>
         </figure>
       </main>
+      <div id="flip-page">
+        <div id="seemore">See more</div>
+        <a href="./pages/artwork.html">
+          <img
+            id="proceed"
+            src="./assets/dooricon.png"
+            alt="Go to artwork page"
+            onMouseOver="fnover();"
+            onMouseOut="fnout();"
+            onclick="fnclick()"
+        /></a>
+      </div>
     </div>
 
     <footer class="footer">
@@ -106,6 +118,18 @@
         } else {
           header.classList.remove("sticky");
         }
+      }
+      function fnover() {
+        var myimg2 = document.getElementById("proceed");
+        myimg2.src = "./assets/opendooricon.png";
+      }
+
+      function fnout() {
+        var myimg2 = document.getElementById("proceed");
+        myimg2.src = "./assets/dooricon.png";
+      }
+      function fnclick() {
+        var myimg2 = document.getElementById("proceed");
       }
     </script>
   </body>
