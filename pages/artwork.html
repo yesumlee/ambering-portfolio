@@ -4,23 +4,7 @@
   <link rel="stylesheet" href="../styles/home.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:600,900&display=swap" rel="stylesheet">
 </head>
-<script>// When the user scrolls the page, execute myFunction
-  window.onscroll = function() {myFunction()};
-  
-  // Get the header
-  var header = document.getElementById("myHeader");
-  
-  // Get the offset position of the navbar
-  var sticky = header.offsettop;
-  
-  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-  function myFunction() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }}
-  </script>
+
    
 <body>
   <header>
@@ -33,14 +17,78 @@
     </div>
    </header>
 
+  <main class="columns">
+    <figure class="figure">
+      <a href="../detail/art01_divein.html">
+      <img src="../assets/artwork_1 1.png" width="100%" />
+      <div class="overlay">
+        <div class="nameofwork">Dive<br />In</div>
+      </div>
+    </a>
+    </figure>
 
- <main class="containter">
-<!--여기서부터 mansonry 스타일 적용 -----> 
+    <figure class="figure">
+      <a href="../detail/art02_cosysummer.html"><img src="../assets/artwork_2 1.png" width="100%" />
+      <div class="overlay">
+        <div class="nameofwork">
+          Cosy<br />
+          Summer
+        </div>
+      </div>
+      </a>
+    </figure>
 
- </main>
+    <figure class="figure">
+     <a href="../detail/art03_littlesilver.html"> <img src="../assets/artwork_3 1.png" width="100%" />
+      <div class="overlay">
+        <div class="nameofwork">
+          Little<br />
+          Silver
+        </div>
+      </div>
+      </a>
+    </figure>
+
+    <figure class="figure">
+      <a href="../detail/art04_coldangel.html"><img src="../assets/artwork_4 2.png" width="100%" />
+      <div class="overlay">
+        <div class="nameofwork">Cold<br/>Angel</div>
+      </div>
+      </a>
+    </figure>
+
+    <figure class="figure">
+     <a href="../detail/art05_float.html"> <img src="../assets/artwork_5 1.png" width="100%" />
+      <div class="overlay">
+        <div class="nameofwork">
+          Float
+        </div>
+      </div>
+    </figure>
+  </a>
+  </main>
+
+
  <footer class="footer">
   Copyright © All rights reserved.
  </footer>
-</div>
+
+<script>// When the user scrolls the page, execute myFunction
+  window.onscroll = myFunction;
+  
+  // Get the header
+  var header = document.getElementById("myHeader");
+  
+  // Get the offset position of the navbar
+  var sticky = header.offsetTop;
+  
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }}
+  </script>
 </body>
 </html>
