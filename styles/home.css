@@ -110,8 +110,9 @@ li > a:hover {
 }
 
 .columns {
-  column-count: 2;
   margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, auto));
 }
 
 .columns figure {
@@ -140,9 +141,10 @@ li > a:hover {
 }
 
 .nameofwork {
+  font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -161,4 +163,8 @@ li > a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.about-text {
+  font-family: "Montserrat", sans-serif;
 }
