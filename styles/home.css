@@ -81,7 +81,7 @@ li > a:hover {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 80px;
+  font-size: 65px;
   line-height: 47px;
   text-decoration: underline #ffb70d;
 
@@ -91,7 +91,7 @@ li > a:hover {
   display: flex;
   justify-content: center;
   position: absolute;
-  left: calc(50% - 235.125px);
+  left: calc(50% - 191.04px);
 }
 
 #profile {
@@ -110,9 +110,8 @@ li > a:hover {
 }
 
 .columns {
+  columns: 2;
   margin-bottom: 60px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, auto));
 }
 
 .columns figure {
@@ -167,4 +166,20 @@ li > a:hover {
 
 .about-text {
   font-family: "Montserrat", sans-serif;
+}
+.art-list {
+  width: 800px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.des-date {
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.work-list > img {
+  margin-bottom: 30px;
 }
