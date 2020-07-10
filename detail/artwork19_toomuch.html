@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:600,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header" id="myHeader">
+        <a href="../index.html">
+          <img src="../assets/Ring.png" width="52px" height="58px"
+        /></a>
+
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="../pages/work.html">Work</a></li>
+        <li><a href="../pages/artwork.html">Artwork</a></li>
+      </div>
+    </header>
+
+    <main class="art-columns" style="margin-top: 82px;">
+      <div class="art-list">
+        <img src="../assets/artwork19_toomuch.jpg" width="100%" />
+      </div>
+      <h1
+        class="des-name"
+        style="text-align: center; font-family: Montserrat; font-size: 28px;"
+      >
+        Too Much
+      </h1>
+      <h2 class="des-date">2018<br />Couache paint on paper</h2>
+    </main>
+    <footer class="footer">
+      Copyright © All rights reserved.
+    </footer>
+    <script>
+      // When the user scrolls the page, execute myFunction
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      // Get the header
+      var header = document.getElementById("myHeader");
+      console.log("header", header);
+      // Get the offset position of the navbar
+      var sticky = header.offsetTop;
+
+      // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
